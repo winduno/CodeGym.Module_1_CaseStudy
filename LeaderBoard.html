@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LeaderBoard</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #leaderBoard{
+            margin-top: 150px;
+        }
+        table{
+            width: 40%;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: auto;
+        }
+        tr:nth-child(even){
+            background-color: #dedede;
+        }
+        td{
+            padding: 10px;
+        }
+        button{
+            background-color: #17b305;
+            border: #21E00D;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+    </style>
+    <script src="LeaderClass.js"></script>
+    <script src="leaderboard.js"></script>
+</head>
+<body onload="DisplayLeaderBoard()">
+<div id="leaderBoard">
+    <h1>LEADERBOARD</h1>
+    <div id="leadTable"></div>
+    <p id="selfScore"></p>
+    <button type="button" onclick="location.href = 'Scences.html'">Nhấn vào đây để bắt đầu chơi</button>
+</div>
+</body>
+</html>

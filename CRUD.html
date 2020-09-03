@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DuolingoCRUD</title>
+    <style>
+        body{
+            font-family: Arial;
+            padding: 10px;
+        }
+        button{
+            background-color: #17b305;
+            border: #21E00D;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        table{
+            width: 80%;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #dedede;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body onload="DisplayQuestion()">
+    <h1>Danh sách các câu hỏi</h1>
+    <button type="button" onclick="AddQuestion(); return false;">Thêm</button>
+    <br><br>
+    <form id="displaying"></form>
+</body>
+</html>
+<script src="DuolingoCRUD.js"></script>
+<script src="QuestionClass.js"></script>
