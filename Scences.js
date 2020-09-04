@@ -113,14 +113,14 @@ function Continue() {
             alert("Chúc mừng bạn đã phá đảo!!!");
             newRecord.point = point;
             checkLeaderBoard(newRecord.point);
-            location.href = "LeaderBoard.html";
+            location.href = "index.html";
         }
     }
     else{
         alert("Bro thua rồi. Nhưng đừng lo, để xem bro có được lưu danh sử sách không nhé!!");
         newRecord.point = point;
         checkLeaderBoard(newRecord.point);
-        location.href = "LeaderBoard.html";
+        location.href = "index.html";
     }
 }
 
@@ -133,6 +133,6 @@ function DisplayPoint() {
 function Cancel() {
     let confirmed = confirm("Thoát bây giờ sẽ hủy kết quả. Vẫn thoát chứ??");
     if (confirmed){
-        location.href = "LeaderBoard.html";
+        location.href = "index.html";
     }
 }
