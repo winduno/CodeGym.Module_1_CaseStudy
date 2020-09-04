@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/winduno/CodeGym.Module_1_CaseStudy/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/winduno/CodeGym.Module_1_CaseStudy/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LeaderBoard</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #leaderBoard{
+            margin-top: 150px;
+        }
+        table{
+            width: 40%;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: auto;
+        }
+        tr:nth-child(even){
+            background-color: #dedede;
+        }
+        td{
+            padding: 10px;
+        }
+        button{
+            background-color: #17b305;
+            border: #21E00D;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+    </style>
+    <script src="LeaderClass.js"></script>
+    <script src="leaderboard.js"></script>
+</head>
+<body onload="DisplayLeaderBoard()">
+<div id="leaderBoard">
+    <h1>LEADERBOARD</h1>
+    <div id="leadTable"></div>
+    <p id="selfScore"></p>
+    <button type="button" onclick="location.href = 'Scences.html'">Nhấn vào đây để bắt đầu chơi</button>
+</div>
+</body>
+</html>
